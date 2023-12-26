@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class Todo extends Component {
+export class Todo22 extends Component {
 
   deleteRow = () => {
     this.props.deleteHandler(this.props.index);
@@ -21,17 +21,16 @@ export class Todo extends Component {
     const {index, data} = this.props;
 
     return (
-    
-      <tr style={{textAlign:"center"}}>
-          <td>{index}</td>
-          <td>{data.id}</td>
-          <td><input type="text" value={data.item}  onChange={this.changeItem} ></input></td>
-          <td>{data.createAt.toLocaleTimeString()} </td>
-          <td><button className="btn btn-danger" onClick={this.deleteRow}>Delete</button></td>
-      </tr>
-    
+    <tr>
+        <td>{index}</td>
+        <td>{data.id}</td>
+        <td><input type="text" value={data.item}  onChange={this.changeItem} ></input></td>
+        <td>{data.createAt.toLocaleTimeString()} 
+        <button onClick={this.deleteRow}>Delete</button>
+        </td>
+    </tr>
     );
   }
 }
 
-export default Todo;
+export default Todo22;

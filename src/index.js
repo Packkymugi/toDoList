@@ -2,15 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css';
-//import 'bootstrap/dist/css/bootscrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import reportWebVitals from './reportWebVitals';
 import TodoList from './Components/TodoList.jsx';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <TodoList/>
-  </React.StrictMode>
+    <TodoList></TodoList>
 );
 
 // If you want to start measuring performance in your app, pass a function
